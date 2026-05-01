@@ -1208,7 +1208,7 @@
 </div>
 
 <footer>
-  <p>© 2025 Jessie Umuhire Umutesi · Kigali, Rwanda</p>
+  <p>© <span id="yr"></span> Jessie Umuhire Umutesi · Kigali, Rwanda</p>
   <p style="display:flex;gap:1.5rem;"><a href="mailto:umuhireumutesijessie@gmail.com" style="color:var(--muted);text-decoration:none;">Email</a><a href="https://github.com/UmuhireJessie" target="_blank" style="color:var(--muted);text-decoration:none;">GitHub</a><a href="https://www.linkedin.com/in/jessie-umuhire-umutesi-7a274a200" target="_blank" style="color:var(--muted);text-decoration:none;">LinkedIn</a></p>
 </footer>
 
@@ -1223,6 +1223,7 @@
   }, { threshold: 0.12 });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
